@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/primary.swiftdeps"
+  },
+  "/Users/mednoor/Desktop/MeetingNotesApp/.build/checkouts/mlx-swift/Source/MLXFFT/FFT.swift": {
+    "dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/FFT.d",
+    "object": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/FFT.swift.o",
+    "swiftmodule": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/FFT~partial.swiftmodule",
+    "swift-dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/FFT.swiftdeps",
+    "diagnostics": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXFFT.build/FFT.dia"
+  }
+}

@@ -144,6 +144,10 @@
 			productName = MeetingNotesApp;
 			productReference = D91517BFBDECE389497A425B /* MeetingNotesApp.app */;
 			productType = "com.apple.product-type.application";
+			packageProductDependencies = (
+				596832364D1E6A417596CFC4 /* WhisperKit */,
+				13927B5B37CA52AD6FBAB2D7 /* MLX */,
+			);
 		};
 	/* End PBXNativeTarget section */
 
@@ -162,6 +166,10 @@
 			};
 			buildConfigurationList = 80D2C36A86E776BABA6C5BCB;
 			compatibilityVersion = "Xcode 14.0";
+			packageReferences = (
+				1895B5A31BAA0281BE15A7C5 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+				38B3F971007D2FD98D43FD0A /* XCRemoteSwiftPackageReference "mlx-swift" */,
+			);
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -324,6 +332,38 @@
 		};
 	/* End XCConfigurationList section */
 
+
+	/* Begin XCRemoteSwiftPackageReference section */
+		1895B5A31BAA0281BE15A7C5 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.18.0;
+			};
+		};
+		38B3F971007D2FD98D43FD0A /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.31.0;
+			};
+		};
+	/* End XCRemoteSwiftPackageReference section */
+
+	/* Begin XCSwiftPackageProductDependency section */
+		596832364D1E6A417596CFC4 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1895B5A31BAA0281BE15A7C5 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+		13927B5B37CA52AD6FBAB2D7 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38B3F971007D2FD98D43FD0A /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+	/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
 }

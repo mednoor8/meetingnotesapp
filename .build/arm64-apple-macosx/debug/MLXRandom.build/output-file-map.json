@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/primary.swiftdeps"
+  },
+  "/Users/mednoor/Desktop/MeetingNotesApp/.build/checkouts/mlx-swift/Source/MLXRandom/Random.swift": {
+    "dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/Random.d",
+    "object": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/Random.swift.o",
+    "swiftmodule": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/Random~partial.swiftmodule",
+    "swift-dependencies": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/Random.swiftdeps",
+    "diagnostics": "/Users/mednoor/Desktop/MeetingNotesApp/.build/arm64-apple-macosx/debug/MLXRandom.build/Random.dia"
+  }
+}

@@ -1,0 +1,4 @@
+module yyjson {
+    umbrella header "/Users/mednoor/Desktop/MeetingNotesApp/.build/checkouts/yyjson/src/yyjson.h"
+    export *
+}

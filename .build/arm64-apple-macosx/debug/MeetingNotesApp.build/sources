@@ -1,0 +1,13 @@
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/App/MeetingNotesApp.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/MenuBar/MeetingStatusViewModel.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Models/LLMPromptResponse.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Models/MeetingOutput.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Models/MeetingState.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Models/TranscriptionResult.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Processing/LocalLLMSummarizer.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Processing/PromptBuilder.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Recording/AudioRecorder.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Storage/AudioCleanup.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Storage/FileManager+Extensions.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Storage/SettingsStore.swift
+/Users/mednoor/Desktop/MeetingNotesApp/MeetingNotesApp/Transcription/Transcriber.swift

@@ -34,11 +34,23 @@
 - `Storage/SettingsStore.swift` — UserDefaults wrapper
 - `Storage/AudioCleanup.swift` — removes raw audio after processing
 
+### 2026-05-01 — SPM Integration
+
+- [x] Added Package.swift with WhisperKit 0.18.0 + MLX Swift 0.31.3
+- [x] Transcriber.swift — real WhisperKit implementation (async/await, segmented transcription)
+- [x] LocalLLMSummarizer.swift — NLP-based extraction (regex + keyword, no API costs)
+- [x] Fixed API mismatches: WhisperKit returns `[TranscriptionResult]`, uses `start`/`end` not `startTime`/`endTime`
+- [x] **BUILD SUCCEEDED** via `swift build` — all 14 source files + WhisperKit + MLX compile
+- [x] MLX Swift added but not yet used for summarization (MLXLLM not available as SPM product)
+- [x] Summarizer uses free NLP extraction: regex-based action items, owners, decisions, topics
+
 ### Current Status
 - [x] Build verification (xcodebuild)
-- [ ] WhisperKit SPM integration
-- [ ] MLX Swift SPM integration
+- [x] WhisperKit SPM integration
+- [x] MLX Swift SPM integration (core MLX only, LLM pending ecosystem)
 - [ ] End-to-end test with real recording
+- [ ] Run the app and verify menu bar appears
+- [ ] Future: upgrade summarizer to MLX LLM when mlx-lm Swift bindings mature
 
 ---
 
@@ -47,6 +59,8 @@
 | Time | Result | Details |
 |---|---|---|
 | 23:15 | Failed | pbxproj parse error — literal \t \n in output |
-| 23:38 | Failed | File path resolution — all files resolved to root (missing main group path) |
-| 23:45 | Failed | All fileRefs duplicated — Python scope bug in list comprehension |
-| 23:48 | **SUCCEEDED** | Clean build passed |
+| 23:38 | Failed | File path resolution — missing main group path |
+| 23:45 | Failed | All fileRefs duplicated — Python scope bug |
+| 23:48 | **SUCCEEDED** | xcodeproj clean build passed (no SPM) |
+| May 1 00:15 | Failed | pbxproj SPM: packages resolved but not linked (indentation + missing module) |
+| May 1 00:30 | **SUCCEEDED** | Package.swift with `swift build` — WhisperKit + MLX linked |
