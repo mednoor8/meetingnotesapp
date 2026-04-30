@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+	/* Begin PBXBuildFile section */
+		8A5BAC657E4A3A55DBBE3130 /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E062B5649CFB6C04453C25 /* MeetingNotesApp.swift */; };
+		7AA5858464292B17EFFA32AF /* MeetingStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D6589C962D7686667E364 /* MeetingStatusViewModel.swift */; };
+		8DC6ACC8C1781688969084C7 /* MeetingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9FD36F195DB4064956E71 /* MeetingState.swift */; };
+		04309E0A8908767894C855FE /* TranscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B292E265567992F45EA88EB /* TranscriptionResult.swift */; };
+		CD250BA6CD476676B1CD4610 /* MeetingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B07C8ACA56743BEDD9098A /* MeetingOutput.swift */; };
+		BE0067467ABEBD44FD73F16C /* LLMPromptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E0D85FD702CC4800ED9B5 /* LLMPromptResponse.swift */; };
+		74FC968A8348F1ACC09C6487 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBEC2C6A353D73FB23E25C /* AudioRecorder.swift */; };
+		416E4F2003246614A44B9BAC /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF08FE816D7CFD2292AB1 /* Transcriber.swift */; };
+		E9B0C63497631FBDC9CC9A8D /* LocalLLMSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC7023C1D5889ED8D49918 /* LocalLLMSummarizer.swift */; };
+		751B4B366A5409DD68A68329 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB1403F1C9BF5D82102D1F9 /* PromptBuilder.swift */; };
+		BB8AB80BC88A927E2666B1E1 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE80DB2A281C7532BD9785 /* FileManager+Extensions.swift */; };
+		3A09DFB35F4EB940C44E706E /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E8B7AD097F707EE9B95034 /* SettingsStore.swift */; };
+		5671652950312BBA59ADE114 /* AudioCleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9210E696B0743120ACC15F /* AudioCleanup.swift */; };
+	/* End PBXBuildFile section */
+
+	/* Begin PBXFileReference section */
+		37E062B5649CFB6C04453C25 /* MeetingNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetingNotesApp.swift"; sourceTree = "<group>"; };
+		60DC25EF77C169296C1A00D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		711D6589C962D7686667E364 /* MeetingStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetingStatusViewModel.swift"; sourceTree = "<group>"; };
+		88B9FD36F195DB4064956E71 /* MeetingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetingState.swift"; sourceTree = "<group>"; };
+		8B292E265567992F45EA88EB /* TranscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranscriptionResult.swift"; sourceTree = "<group>"; };
+		08B07C8ACA56743BEDD9098A /* MeetingOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetingOutput.swift"; sourceTree = "<group>"; };
+		2D4E0D85FD702CC4800ED9B5 /* LLMPromptResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LLMPromptResponse.swift"; sourceTree = "<group>"; };
+		E5DBEC2C6A353D73FB23E25C /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioRecorder.swift"; sourceTree = "<group>"; };
+		16BCF08FE816D7CFD2292AB1 /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transcriber.swift"; sourceTree = "<group>"; };
+		57DC7023C1D5889ED8D49918 /* LocalLLMSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalLLMSummarizer.swift"; sourceTree = "<group>"; };
+		0DB1403F1C9BF5D82102D1F9 /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromptBuilder.swift"; sourceTree = "<group>"; };
+		9DDE80DB2A281C7532BD9785 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		21E8B7AD097F707EE9B95034 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsStore.swift"; sourceTree = "<group>"; };
+		DA9210E696B0743120ACC15F /* AudioCleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioCleanup.swift"; sourceTree = "<group>"; };
+		D91517BFBDECE389497A425B /* MeetingNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	/* End PBXFileReference section */
+
+	/* Begin PBXGroup section */
+		2B731CEFC6751AAE0EC69B98 = {
+			isa = PBXGroup;
+			children = (
+				FE910D29D648D8F2EA669AEF /* App */,
+				0757391C49AC6FE33FFE5834 /* MenuBar */,
+				9CF43B31E8845D861542A38E /* Models */,
+				147CCD0BAB103DBE6B8FEE25 /* Recording */,
+				32A4C08810859DA0C568B8F5 /* Transcription */,
+				FBB3859763A536E78CBBAFA1 /* Processing */,
+				F26201C1E65404DE8245CC9E /* Storage */,
+				0A2C978E52A76F0AA9F68BB5 /* Products */,
+			);
+			path = MeetingNotesApp;
+			sourceTree = "<group>";
+		};
+		0A2C978E52A76F0AA9F68BB5 = {
+			isa = PBXGroup;
+			children = (
+				D91517BFBDECE389497A425B /* MeetingNotesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE910D29D648D8F2EA669AEF = {
+			isa = PBXGroup;
+			children = (
+				37E062B5649CFB6C04453C25 /* MeetingNotesApp.swift */,
+				60DC25EF77C169296C1A00D5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0757391C49AC6FE33FFE5834 = {
+			isa = PBXGroup;
+			children = (
+				711D6589C962D7686667E364 /* MeetingStatusViewModel.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		9CF43B31E8845D861542A38E = {
+			isa = PBXGroup;
+			children = (
+				88B9FD36F195DB4064956E71 /* MeetingState.swift */,
+				8B292E265567992F45EA88EB /* TranscriptionResult.swift */,
+				08B07C8ACA56743BEDD9098A /* MeetingOutput.swift */,
+				2D4E0D85FD702CC4800ED9B5 /* LLMPromptResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		147CCD0BAB103DBE6B8FEE25 = {
+			isa = PBXGroup;
+			children = (
+				E5DBEC2C6A353D73FB23E25C /* AudioRecorder.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		32A4C08810859DA0C568B8F5 = {
+			isa = PBXGroup;
+			children = (
+				16BCF08FE816D7CFD2292AB1 /* Transcriber.swift */,
+			);
+			path = Transcription;
+			sourceTree = "<group>";
+		};
+		FBB3859763A536E78CBBAFA1 = {
+			isa = PBXGroup;
+			children = (
+				57DC7023C1D5889ED8D49918 /* LocalLLMSummarizer.swift */,
+				0DB1403F1C9BF5D82102D1F9 /* PromptBuilder.swift */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		F26201C1E65404DE8245CC9E = {
+			isa = PBXGroup;
+			children = (
+				9DDE80DB2A281C7532BD9785 /* FileManager+Extensions.swift */,
+				21E8B7AD097F707EE9B95034 /* SettingsStore.swift */,
+				DA9210E696B0743120ACC15F /* AudioCleanup.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+	/* End PBXGroup section */
+
+	/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9832DA6294341A73224777;
+			buildPhases = (
+				FCA229C23F166EBB0BA5029E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetingNotesApp;
+			productName = MeetingNotesApp;
+			productReference = D91517BFBDECE389497A425B /* MeetingNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+	/* End PBXNativeTarget section */
+
+	/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 80D2C36A86E776BABA6C5BCB;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B731CEFC6751AAE0EC69B98;
+			productRefGroup = 0A2C978E52A76F0AA9F68BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* MeetingNotesApp */,
+			);
+		};
+	/* End PBXProject section */
+
+	/* Begin PBXSourcesBuildPhase section */
+		FCA229C23F166EBB0BA5029E = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BAC657E4A3A55DBBE3130 /* MeetingNotesApp.swift in Sources */,
+				7AA5858464292B17EFFA32AF /* MeetingStatusViewModel.swift in Sources */,
+				8DC6ACC8C1781688969084C7 /* MeetingState.swift in Sources */,
+				04309E0A8908767894C855FE /* TranscriptionResult.swift in Sources */,
+				CD250BA6CD476676B1CD4610 /* MeetingOutput.swift in Sources */,
+				BE0067467ABEBD44FD73F16C /* LLMPromptResponse.swift in Sources */,
+				74FC968A8348F1ACC09C6487 /* AudioRecorder.swift in Sources */,
+				416E4F2003246614A44B9BAC /* Transcriber.swift in Sources */,
+				E9B0C63497631FBDC9CC9A8D /* LocalLLMSummarizer.swift in Sources */,
+				751B4B366A5409DD68A68329 /* PromptBuilder.swift in Sources */,
+				BB8AB80BC88A927E2666B1E1 /* FileManager+Extensions.swift in Sources */,
+				3A09DFB35F4EB940C44E706E /* SettingsStore.swift in Sources */,
+				5671652950312BBA59ADE114 /* AudioCleanup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+	/* End PBXSourcesBuildPhase section */
+
+	/* Begin XCBuildConfiguration section */
+		B19EE232BED43C79C56E2EEA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5040E199878EA5D66E7BA810 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F458A5C3B467D66B00025B0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetingNotesApp/App/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Brief needs microphone access to record your meetings for transcription.";
+				INFOPLIST_KEY_LSUIElement = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brief.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		468ECB46AE2EBDFB271B0BFC = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetingNotesApp/App/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Brief needs microphone access to record your meetings for transcription.";
+				INFOPLIST_KEY_LSUIElement = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brief.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+	/* End XCBuildConfiguration section */
+
+	/* Begin XCConfigurationList section */
+		80D2C36A86E776BABA6C5BCB = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19EE232BED43C79C56E2EEA /* Debug */,
+				5040E199878EA5D66E7BA810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9832DA6294341A73224777 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F458A5C3B467D66B00025B0 /* Debug */,
+				468ECB46AE2EBDFB271B0BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+	/* End XCConfigurationList section */
+
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
