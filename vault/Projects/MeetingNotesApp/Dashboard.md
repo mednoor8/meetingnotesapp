@@ -8,7 +8,7 @@ started: 2026-04-30
 
 ## Current State
 - **Phase:** MVP (Phase 1)
-- **Status:** Scaffolded & compiling
+- **Status:** Menu bar icon visible, full pipeline coded, ready for E2E test
 
 ## Quick Links
 - [[Planning]] — Full architecture & tech stack
@@ -22,20 +22,23 @@ started: 2026-04-30
 - [x] Configure Info.plist (mic permission)
 - [x] Implement MeetingState enum + MeetingStatusViewModel
 - [x] Implement AudioRecorder (AVCaptureSession → M4A)
-- [x] Scaffold Transcriber (WhisperKit stub)
-- [x] Scaffold LocalLLMSummarizer (MLX stub)
-- [x] Build PromptBuilder + JSON models
+- [x] Transcribr — real WhisperKit 0.18.0 integration (async/await)
+- [x] LocalLLMSummarizer — NLP-based extraction (regex + keyword, free)
+- [x] PromptBuilder + JSON models
 - [x] Storage layer (FileManager extensions, SettingsStore, AudioCleanup)
-- [x] **BUILD SUCCEEDED** — all 14 source files compile
+- [x] SPM integration — WhisperKit 0.18.0 + MLX Swift 0.31.3 via Package.swift
+- [x] BUILD SUCCEEDED (swift build) — all 14 files + WhisperKit + MLX compile
+- [x] Menu bar icon visible — NSStatusBar + NSPopover (proven AppKit approach)
+- [x] App bundle properly structured (PkgInfo, codesign)
+- [x] Single GitHub repo at https://github.com/mednoor8/meetingnotesapp
 
 ## Next Actions
-- [ ] Integrate WhisperKit via SPM for real transcription
-- [ ] Integrate MLX Swift via SPM for real summarization
 - [ ] End-to-end test with real meeting recording
+- [ ] Test Start/Stop/Pause menu interactions
 - [ ] Wire up full flow: Record → Transcribe → Summarize → Save as .md
-- [ ] Add cleanup step (delete raw audio after success)
+- [ ] Future: upgrade summarizer to MLX LLM when mlx-lm bindings mature
 
 ## Phases
-- [ ] Phase 1 — MVP (menu bar, record, transcribe, summarize, save .md)
+- [x] Phase 1 — MVP (menu bar, record, transcribe, summarize, save .md) — **IN PROGRESS**
 - [ ] Phase 2 — Screen capture, system audio, pause/resume
 - [ ] Phase 3 — Live transcription, calendar, search
