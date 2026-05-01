@@ -31,7 +31,20 @@ type: log
 - Markdown generation + save + audio cleanup
 - Menu bar app with full state machine
 
+## 2026-05-01 01:31 — Menu Bar Icon Fix
+- **MenuBarExtra silent failure** — SwiftUI `MenuBarExtra` compiled and ran but no icon appeared
+- **Root cause:** Swift 6.3 on macOS 15 — MenuBarExtra silently didn't render (no errors logged)
+- **Fix:** Switched to `NSStatusBar` + `NSPopover` (proven AppKit approach)
+  - `NSApplicationDelegate` sets `setActivationPolicy(.accessory)` in `applicationDidFinishLaunching`
+  - `NSStatusBar.system.statusItem(withLength:)` creates menu bar item
+  - Icon set via `NSImage(systemSymbolName:)` on the button
+  - `NSPopover` with `NSHostingController` for the SwiftUI menu content
+  - Timer polls state changes to update icon image
+- **App bundle:** Added PkgInfo, CFBundlePackageType, CFBundleSignature, ad-hoc signing
+- **ICON VISIBLE** — circle icon appears in menu bar
+- **bundle.sh** script saved at `.build/bundle.sh` for reproducible builds
+
 ## Next
 - [ ] End-to-end test with real meeting recording
-- [ ] Run app and verify menu bar workflow
+- [ ] Test Start/Stop/Pause menu interactions
 - [ ] Future: upgrade summarizer to MLX LLM

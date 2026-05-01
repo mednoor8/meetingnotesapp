@@ -48,6 +48,8 @@
 - [x] Build verification (xcodebuild)
 - [x] WhisperKit SPM integration
 - [x] MLX Swift SPM integration (core MLX only, LLM pending ecosystem)
+- [x] **Menu bar icon fixed** — switched from MenuBarExtra to NSStatusBar + NSPopover
+- [x] App bundle properly structured with PkgInfo, codesign
 - [ ] End-to-end test with real recording
 - [ ] Run the app and verify menu bar appears
 - [ ] Future: upgrade summarizer to MLX LLM when mlx-lm Swift bindings mature
